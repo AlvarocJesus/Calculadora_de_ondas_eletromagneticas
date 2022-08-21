@@ -1,3 +1,4 @@
+from math import pi
 from time import sleep
 
 print("""
@@ -8,26 +9,26 @@ Vinícius Nanaki
 """)
 
 
-def calculateFromCampoEletrico(option):
-	campoMagnetico = 0
+def calculateFromCampoEletrico(value):
+	campoMagnetico = value / (3e8)
 	intensidadeCampo = 0
 
 	print(
-		f"Amplitude do Campo Magnético: {campoMagnetico}\nIntensidade da onda eletromagnética: {intensidadeCampo}")
+		f"Amplitude do Campo Magnético: {campoMagnetico:.2e}\nIntensidade da onda eletromagnética: {intensidadeCampo:.2e}")
 
 
-def calculateFromCampoMagnetico(option):
-	campoEletrico = 0
+def calculateFromCampoMagnetico(value):
+	campoEletrico = value * (3e8)
 	intensidadeCampo = 0
 	print(
-		f"Amplitude do Campo Magnético: {campoEletrico}\nIntensidade da onda eletromagnética: {intensidadeCampo}")
+		f"Amplitude do Campo Magnético: {campoEletrico:.2e}\nIntensidade da onda eletromagnética: {intensidadeCampo:.2e}")
 
 
 def calculateFromIntensidadeDaOonda(option):
 	campoMagnetico = 0
 	campoEletrico = 0
 	print(
-		f"Amplitude do Campo Magnético: {campoMagnetico}\nAmplitude do Campo Elétrico: {campoEletrico}")
+		f"Amplitude do Campo Magnético: {campoMagnetico:.2e}\nAmplitude do Campo Elétrico: {campoEletrico:.2e}")
 
 
 def calculateFromComprimentoDaOnda(option):
@@ -35,15 +36,15 @@ def calculateFromComprimentoDaOnda(option):
 	numeroOnda = 0
 	frequenciaAngular = 0
 	print(
-		f"Frequencia: {frequencia}\nNumero de onda: {numeroOnda}\nFrequencia Angular: {frequenciaAngular}")
+		f"Frequencia: {frequencia:.2e}\nNumero de onda: {numeroOnda:.2e}\nFrequencia Angular: {frequenciaAngular:.2e}")
 
 
-def calculateFromFrequency(option):
-	comprimentoOnda = 0
-	numeroOnda = 0
-	frequenciaAngular = 0
+def calculateFromFrequency(value):
+	frequenciaAngular = 2*pi*value
+	comprimentoOnda = 2*pi*((3*10**8)/frequenciaAngular)
+	numeroOnda = (2*pi)/comprimentoOnda
 	print(
-		f"Comprimento de onda: {comprimentoOnda}\nNumero de onda: {numeroOnda}\nFrequência Angular: {frequenciaAngular}")
+		f"Comprimento de onda: {comprimentoOnda:.2e}\nNumero de onda: {numeroOnda:.2e}\nFrequência Angular: {frequenciaAngular:.2e}")
 
 
 def calculateFromFrequencyAngular(option):
@@ -51,7 +52,7 @@ def calculateFromFrequencyAngular(option):
 	numeroOnda = 0
 	comprimentoOnda = 0
 	print(
-		f"Frequência: {frequencia}\nComprimento de onda: {comprimentoOnda}\nNumero de onda: {numeroOnda}")
+		f"Frequência: {frequencia:.2e}\nComprimento de onda: {comprimentoOnda:.2e}\nNumero de onda: {numeroOnda:.2e}")
 
 
 def calculateFromNumeroDeOnda(option):
@@ -59,7 +60,7 @@ def calculateFromNumeroDeOnda(option):
 	comprimentoOnda = 0
 	frequenciaAngular = 0
 	print(
-		f"Frequência: {frequencia}\nComprimento de onda: {comprimentoOnda}\nFrequência Angular: {frequenciaAngular}")
+		f"Frequência: {frequencia:.2e}\nComprimento de onda: {comprimentoOnda:.2e}\nFrequência Angular: {frequenciaAngular:.2e}")
 
 
 def main():
@@ -76,32 +77,39 @@ def main():
 
 0 - Sair
 		""")
-		option = float(input('Digite uma opção:'))
+		option = int(input('Digite uma opção:'))
 		if(option == 0):
 			sleep(1)
 			print('Ate a proxima...')
 			sleep(1)
 			break
 		elif(option == 1):
-			calculateFromCampoEletrico(option)
+			value = float(input())
+			calculateFromCampoEletrico(value)
 			sleep(1)
 		elif(option == 2):
-			calculateFromCampoMagnetico(option)
+			value = float(input())
+			calculateFromCampoMagnetico(value)
 			sleep(1)
 		elif(option == 3):
-			calculateFromIntensidadeDaOonda(option)
+			value = float(input())
+			calculateFromIntensidadeDaOonda(value)
 			sleep(1)
 		elif(option == 4):
-			calculateFromComprimentoDaOnda(option)
+			value = float(input())
+			calculateFromComprimentoDaOnda(value)
 			sleep(1)
 		elif(option == 5):
-			calculateFromFrequency(option)
+			value = float(input())
+			calculateFromFrequency(value)
 			sleep(1)
 		elif(option == 6):
-			calculateFromFrequencyAngular(option)
+			value = float(input())
+			calculateFromFrequencyAngular(value)
 			sleep(1)
 		elif(option == 7):
-			calculateFromNumeroDeOnda(option)
+			value = float(input())
+			calculateFromNumeroDeOnda(value)
 			sleep(1)
 
 
