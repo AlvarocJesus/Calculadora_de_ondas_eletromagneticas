@@ -23,4 +23,4 @@ python main.py
 ## Colaboradores
 - Álvaro Coelho Jesus RA: 22221002-3
 - Fernando Shiraishi RA: 22221014-8
-- Vinícius Alves Pedro RA: 22221036-1
+- Vinicius Alves Pedro RA: 22221036-1
