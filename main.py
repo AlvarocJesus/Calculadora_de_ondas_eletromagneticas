@@ -5,7 +5,7 @@ print("""
 Integrantes do grupo:
 * Álvaro Coelho Jesus
 * Fernando Shiraishi
-* Vinícius Nanaki
+* Vinicius Alves Pedro
 """)
 
 # Constantes:
