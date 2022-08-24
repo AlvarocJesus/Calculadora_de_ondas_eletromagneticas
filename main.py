@@ -9,6 +9,11 @@ Integrantes do grupo:
 * Vinicius Alves Pedro | RA: 22.221.031-1
 """)
 
+# Explicação sobre o programa
+print("""
+Projeto realizado para a materia de física moderna sobre o conteúdo de ondas eletromagnéticas. Apos iniciar o projeto ira aparecer o menu com as opções com os cálculos que podem ser realizados e apos escolher o calculo que deseja realizar, aparecerá um input para colocar o valor de entrada com a respectiva unidade que desejamos e utilizando notação científica como utilizado no Excel. Exemplo: 4.136e-15
+""")
+
 # Constantes:
 u0 = 4*pi*(10**(-7)) # permeabilidade magnética do vácuo [H/m]
 c = 3e8 # velocidade da luz [m/s]
