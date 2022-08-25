@@ -97,7 +97,7 @@ def main():
       option = (input('Digite uma opção: '))
       if(option == '0'):
         sleep(1)
-        print('Até a proxima...(^.^)')
+        print('Até a proxima...(^.^) 👉️👈️')
         sleep(1)
         break
       elif(option == '1'):
