@@ -11,7 +11,8 @@ Integrantes do grupo:
 
 # Explicação sobre o programa
 print("""
-Projeto realizado para a materia de física moderna sobre o conteúdo de ondas eletromagnéticas. Apos iniciar, o projeto irá mostrar o menu com as opções com os cálculos que podem ser realizados, e apos escolher o calculo que deseja realizar, aparecerá um input para colocar o valor de entrada com a respectiva unidade desejada, utilizando notação científica como utilizado no Excel. Exemplo: 4.136e-15
+Projeto realizado para a materia de física moderna sobre o conteúdo de ondas eletromagnéticas. Apos iniciar, o projeto irá mostrar o menu com as opções com os cálculos que podem ser realizados, e apos escolher o calculo que deseja realizar, aparecerá um input para colocar o valor de entrada com a respectiva unidade desejada, utilizando notação científica como utilizado no Excel. Exemplo de valor de entrada: 4.136e-15.
+Após realizar os calculos, o programa irá retornar os valores com as variaveis que podem ser obtidas utilizando aquele valor de entrada, juntamente do proprio resultado da conta(em notação científica) e com suas unidades.
 """)
 
 # Constantes:
