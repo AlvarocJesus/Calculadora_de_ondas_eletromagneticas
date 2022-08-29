@@ -12,7 +12,7 @@ Integrantes do grupo:
 # Explicação sobre o programa
 print("""
 Projeto realizado para a matéria de física moderna sobre o conteúdo de ondas eletromagnéticas. Após iniciar, o projeto irá mostrar o menu de opções com os cálculos que podem ser realizados. Após escolher o cálculo que deseja realizar, aparecerá um input para colocar o valor de entrada com a respectiva unidade desejada, é possível utilizar notação científica como no Excel (Exemplo de valor de entrada: 4.136e-15).
-Após realizar os cálculos, o programa retornará os valores das variáveis que podem ser obtidas utilizando o valor de entrada (em notação científica) e com suas respectivas unidades.
+Após realizar os cálculos, o programa retornará os valores das variáveis (em notação científica) que podem ser obtidas utilizando o valor de entrada e com suas respectivas unidades.
 """)
 
 # Constantes:
